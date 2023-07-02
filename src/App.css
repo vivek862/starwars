@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+}
+
+.app-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.header {
+  height:10vh
+}
+
+.input-box{
+  width: 50%;
+}
+
+.app-body{
+  margin-top: 10%;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Table {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  /*border: 1px solid #f2f2f2;*/
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.Table-header {
+  display: flex;
+}
+@media (min-width: 500px) {
+  .Table-header {
+      font-weight: 500;
+      /*background-color: #f2f2f2;*/
+  }
+}
+.Table-row {
+  width: 100%;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  height: 42px;
+}
+.Table .Table-row:last-child{
+  border-bottom:none;
+}
+@media (min-width: 500px) {
+  .Table-row {
+      display: flex;
+      flex-flow: row nowrap;
+  }
+}
+.Table-row-item {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5em;
+  word-break: break-word;
+  align-items: center;
+  margin-left:10px;
+}
+@media (min-width: 500px) {
+  .Table-row-item {
+      border: 1px solid #ffffff;
+      padding: 0.5em;
+  }
+  .Table-row-item:before {
+      content: none;
+  }
+}
+
+.page-previous{
+  padding-right: 15px;
+  color:cornflowerblue;
+  cursor: pointer;
+}
+
+.page-next{
+  padding-left: 15px;
+  color:cornflowerblue;
+  cursor: pointer;
+}
+

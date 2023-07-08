@@ -1,10 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with Starwars App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, to run the code:
+To start this app please run `npm install` and then run `npm start`
 
 ### `npm install`
 

@@ -11,6 +11,7 @@ export default function AutoComplete(props) {
       options={props.planets}
       autoHighlight
       getOptionLabel={(option) => option.name}
+      onInputChange={(event, value) => props.handleInputChange(value)}
       onChange={(event, value) => props.callback(value)}
       renderOption={(props, option) => (
         <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>

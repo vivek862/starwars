@@ -74,9 +74,9 @@ export default function Table(props) {
                     }
                 }
                 }>Previous</span>
-                <span>Page {index} of {(props.rows.length%10) + 1}</span>
+                <span>Page {index} of {parseInt(props.rows.length / 11) + 1}</span>
                 <span className="page-next" onClick={()=>{
-                    if(index < ((props.rows.length%10) + 1)){
+                    if(index < (parseInt(props.rows.length / 11) + 1)){
                         setIndex(index+1)
                     }
                     }}>Next</span>
